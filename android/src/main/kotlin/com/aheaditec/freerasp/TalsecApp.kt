@@ -33,30 +33,30 @@ class TalsecApp(private val context: Context) : ThreatListener.ThreatDetected {
 
     override fun onRootDetected() {
         Log.e("Threat","ROOT")
-        submitEvent("onRootDetected")
+        submitEvent("ord")
     }
 
     override fun onDebuggerDetected() {
-        submitEvent("onDebuggerDetected")
+        submitEvent("odd")
     }
 
     override fun onEmulatorDetected() {
-        submitEvent("onEmulatorDetected")
+        submitEvent("oed")
     }
 
     override fun onTamperDetected() {
-        submitEvent("onTamperDetected")
+        submitEvent("otd")
     }
 
     override fun onHookDetected() {
-        submitEvent("onHookDetected")
+        submitEvent("ohd")
     }
 
     override fun onDeviceBindingDetected() {
-        submitEvent("onDeviceBindingDetected")
+        submitEvent("odbd")
     }
 
     override fun onUntrustedInstallationSourceDetected() {
-        submitEvent("onUntrustedInstallationSourceDetected")
+        submitEvent("ouisd")
     }
 }

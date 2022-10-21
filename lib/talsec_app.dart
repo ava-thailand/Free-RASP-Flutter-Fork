@@ -75,35 +75,35 @@ class TalsecApp {
       switch (event) {
 
         /// Android: Event received when device is rooted
-        case "onRootDetected":
+        case "ord":
           _callback.androidCallback?.onRootDetected?.call();
           break;
 
         /// Android & iOS: Event received when app is running in debug mode
-        case "onDebuggerDetected":
+        case "odd":
           _callback.onDebuggerDetected?.call();
           break;
 
         /// Android: Event received when app is running on emulator
-        case "onEmulatorDetected":
+        case "oed":
           _callback.androidCallback?.onEmulatorDetected?.call();
           break;
 
         /// Android: Event received when app code integrity is disturbed
-        case "onTamperDetected":
+        case "otd":
           _callback.androidCallback?.onTamperDetected?.call();
           break;
 
         /// Android: Event received when hooking framework is present or used
-        case "onHookDetected":
+        case "ohd":
           _callback.androidCallback?.onHookDetected?.call();
           break;
 
-        case 'onDeviceBindingDetected':
+        case 'odbd':
           _callback.androidCallback?.onDeviceBindingDetected?.call();
           break;
 
-        case 'onUntrustedInstallationSourceDetected':
+        case 'ouisd':
           _callback.androidCallback?.onUntrustedInstallationDetected?.call();
           break;
 
