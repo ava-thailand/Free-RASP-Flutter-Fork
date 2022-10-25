@@ -32,7 +32,6 @@ class TalsecApp(private val context: Context) : ThreatListener.ThreatDetected {
     }
 
     override fun onRootDetected() {
-        Log.e("Threat","ROOT")
         submitEvent("ord")
     }
 
